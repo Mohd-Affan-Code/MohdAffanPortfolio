@@ -1,7 +1,30 @@
-import React from "react";
-import { Globe } from "lucide-react";
+import React, { useState, useEffect } from "react";
+import { Globe, X, AlignRight } from "lucide-react";
+import ResponsiveN from "./ResponsiveN";
 
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle((prev) => !prev);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setToggle(false); // Turn off toggle for large screens
+      }
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Add event listener for resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on unmount
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <div className="border-b-2">
       <nav className="flex justify-between items-center h-24 mx-auto max-w-7xl px-4">
@@ -31,7 +54,13 @@ const Header = () => {
           <h1 className="font-medium ">English</h1>
           <Globe className="w-6 h-6  " />
         </div>
+        <div className="md:hidden">
+          <span onClick={handleToggle} className="flex items-center">
+            {toggle ? <X /> : <AlignRight />}
+          </span>
+        </div>
       </nav>
+      <ResponsiveN toggle={toggle} />
     </div>
   );
 };
