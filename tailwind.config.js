@@ -7,7 +7,7 @@ export default {
         afacad: ["Afacad", "serif"],
       },
       colors: {
-        customGreen: "#1d995b",
+        homeColer: "#f0ffff",
       },
     },
   },
