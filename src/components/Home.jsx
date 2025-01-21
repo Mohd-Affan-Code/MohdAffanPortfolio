@@ -17,7 +17,7 @@ const Home = () => {
           Front-End Web Developer
         </h1>
         <p className="font-medium text-xl text-gray-700 my-4">
-          "Hi, I'm "<span className="underline"> Mohd AFFAN. </span> An expert
+          Hi, I'm <span className="underline"> Mohd AFFAN.</span> An expert
           Front-end Developer based <br /> in Mumbai, India
           <span className="inline-block ml-2">
             <img
