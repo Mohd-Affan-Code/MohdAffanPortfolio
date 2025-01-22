@@ -30,12 +30,20 @@ const Home = () => {
         </p>
 
         <div className="flex gap-5 text-gray-800">
-          <span className="cursor-pointer hover:text-blue-500">
+          <a
+            href="https://www.linkedin.com/in/mohdaffan09/"
+            target="_blank"
+            className="cursor-pointer hover:text-blue-500"
+          >
             <Linkedin size={32} />
-          </span>
-          <span className="cursor-pointer hover:text-blue-500">
+          </a>
+          <a
+            href="https://github.com/Mohd-Affan-Code"
+            target="_blank"
+            className="cursor-pointer hover:text-blue-500"
+          >
             <Github size={32} />
-          </span>
+          </a>
         </div>
 
         <div className="flex max-md:flex-col md:items-center items-start gap-8 mt-14">
