@@ -1,6 +1,6 @@
 import React from "react";
 import { Linkedin, Github } from "lucide-react";
-import { skillPng } from "../assets/Data/skill.js";
+import { skillPng } from "../assets/skill.js";
 import india from "/skillImg/india.png";
 
 const Home = () => {
@@ -12,11 +12,11 @@ const Home = () => {
 
   return (
     <div className="bg-homeColer min-h-[calc(100vh-96px)] py-10">
-      <div className="mx-auto max-w-[79rem] px-4 mt-20">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800">
+      <div className="mx-auto max-w-[79rem] px-4 mt-20 flex flex-col justify-center gap-6">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 ">
           Front-End Web Developer
         </h1>
-        <p className="font-medium text-xl text-gray-700 my-4">
+        <p className="font-medium text-xl text-gray-700 my-4 leading-10">
           Hi, I'm <span className="underline"> Mohd AFFAN.</span> An expert
           Front-end Developer based <br /> in Mumbai, India
           <span className="inline-block ml-2">
@@ -38,14 +38,14 @@ const Home = () => {
           </span>
         </div>
 
-        <div className="flex max-md:flex-col md:items-center items-start gap-8 mt-8">
+        <div className="flex max-md:flex-col md:items-center items-start gap-8 mt-14">
           {/* My Skills Heading */}
           <span className="font-semibold text-lg whitespace-nowrap">
             My Skills:
           </span>
 
           {/* Skills Images Wrapper */}
-          <div className="flex flex-wrap gap-6">
+          <div className="flex flex-wrap gap-6 ">
             {groupedSkills.map((pair, index) => (
               <div
                 key={index}
