@@ -44,6 +44,13 @@ const Home = () => {
           >
             <Github size={32} />
           </a>
+          <a
+            href="/MohdAffan.pdf"
+            download="MohdAffan.pdf"
+            className="px-6 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300"
+          >
+            Download Resume
+          </a>
         </div>
 
         <div className="flex max-md:flex-col md:items-center items-start gap-8 mt-14">
