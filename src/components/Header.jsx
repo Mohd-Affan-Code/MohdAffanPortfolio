@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Globe, X, AlignRight } from "lucide-react";
 import ResponsiveN from "./ResponsiveN";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -34,19 +35,47 @@ const Header = () => {
         </h1>
         {/* menu bar */}
         <ul className="flex space-x-6 text-gray-700 font-medium max-md:hidden">
-          <li className="relative text-xl  cursor-pointer after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full">
+          <Link
+            to="hero"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="relative text-xl  cursor-pointer after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full"
+          >
             Home
-          </li>
+          </Link>
 
-          <li className="relative text-xl cursor-pointer after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full">
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="relative text-xl cursor-pointer after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full"
+          >
             About
-          </li>
-          <li className="relative text-xl cursor-pointer after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full">
+          </Link>
+          <Link
+            to="project"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="relative text-xl cursor-pointer after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full"
+          >
             Project
-          </li>
-          <li className="relative text-xl cursor-pointer after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full">
+          </Link>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="relative text-xl cursor-pointer after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full"
+          >
             Contact
-          </li>
+          </Link>
         </ul>
 
         {/* Language Selector */}

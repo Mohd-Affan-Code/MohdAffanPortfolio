@@ -11,7 +11,7 @@ const Home = () => {
   }
 
   return (
-    <div className="bg-homeColer min-h-[calc(100vh-96px)] py-10">
+    <div id="hero" className="bg-homeColer min-h-[calc(100vh-96px)] py-10">
       <div className="mx-auto max-w-[79rem] px-4 mt-20 flex flex-col justify-center gap-6">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 ">
           Front-End Web Developer
