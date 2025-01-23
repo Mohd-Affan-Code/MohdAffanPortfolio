@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Globe } from "lucide-react";
 import { Link } from "react-scroll";
+import { LanguContext } from "../context/Langtoggle";
 
 const ResponsiveN = ({ toggle }) => {
+  const { langu, setLangu } = useContext(LanguContext);
+  const handleLagutoggle = () => {
+    setLangu(true);
+  };
   return (
     <>
       {toggle && (
@@ -49,7 +54,10 @@ const ResponsiveN = ({ toggle }) => {
               Contact
             </Link>
           </ul>
-          <div className="flex items-center space-x-2 text-gray-700 text-xl border-2 border-transparent hover:border-blue-500 py-2 px-3 rounded-md cursor-pointer transition-all duration-300 hover:text-blue-500">
+          <div
+            onClick={handleLagutoggle}
+            className="flex items-center space-x-2 text-gray-700 text-xl border-2 border-transparent hover:border-blue-500 py-2 px-3 rounded-md cursor-pointer transition-all duration-300 hover:text-blue-500"
+          >
             <h1 className="font-medium">English</h1>
             <Globe className="w-6 h-6" />
           </div>

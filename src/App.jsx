@@ -5,16 +5,19 @@ import About from "./components/About";
 import Project from "./components/Project";
 import ContactPage from "./components/ContactPage";
 import Footer from "./components/Footer";
+import { LanguProvider } from "./context/Langtoggle";
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <Home />
-      <About />
-      <Project />
-      <ContactPage />
-      <Footer />
+      <LanguProvider>
+        <Header />
+        <Home />
+        <About />
+        <Project />
+        <ContactPage />
+        <Footer />
+      </LanguProvider>
     </div>
   );
 };

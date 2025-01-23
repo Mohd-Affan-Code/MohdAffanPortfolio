@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Globe, X, AlignRight } from "lucide-react";
 import ResponsiveN from "./ResponsiveN";
 import { Link } from "react-scroll";
 import Langu from "./Langu";
+import { LanguContext } from "../context/Langtoggle";
 
 const Header = () => {
+  const { langu, setLangu } = useContext(LanguContext);
   const [toggle, setToggle] = useState(false);
-  const [langu, setLangu] = useState(false);
+  // const [langu, setLangu] = useState(false);
 
   const handleToggle = () => {
     setToggle((prev) => !prev);
@@ -94,7 +96,10 @@ const Header = () => {
           <Globe className="w-6 h-6  " />
         </div>
         <div className="md:hidden">
-          <span onClick={handleToggle} className="flex items-center">
+          <span
+            onClick={handleToggle}
+            className="flex items-center cursor-pointer"
+          >
             {toggle ? <X /> : <AlignRight />}
           </span>
         </div>
