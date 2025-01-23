@@ -2,12 +2,18 @@ import React, { useState, useEffect } from "react";
 import { Globe, X, AlignRight } from "lucide-react";
 import ResponsiveN from "./ResponsiveN";
 import { Link } from "react-scroll";
+import Langu from "./Langu";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
+  const [langu, setLangu] = useState(false);
 
   const handleToggle = () => {
     setToggle((prev) => !prev);
+  };
+
+  const handleLangu = () => {
+    setLangu(true);
   };
 
   useEffect(() => {
@@ -28,6 +34,7 @@ const Header = () => {
   }, []);
   return (
     <div className="border-b-2">
+      {langu && <Langu setLangu={setLangu} />}
       <nav className="flex justify-between items-center h-24 mx-auto max-w-7xl px-4">
         {/* logo */}
         <h1 className="text-2xl font-bold ">
@@ -79,7 +86,10 @@ const Header = () => {
         </ul>
 
         {/* Language Selector */}
-        <div className="flex max-md:hidden items-center space-x-2 text-gray-700 text-xl border-2 border-transparent hover:border-blue-500 py-2 px-3 rounded-md cursor-pointer transition-all duration-300 hover:text-blue-500">
+        <div
+          onClick={handleLangu}
+          className="flex max-md:hidden items-center space-x-2 text-gray-700 text-xl border-2 border-transparent hover:border-blue-500 py-2 px-3 rounded-md cursor-pointer transition-all duration-300 hover:text-blue-500"
+        >
           <h1 className="font-medium ">English</h1>
           <Globe className="w-6 h-6  " />
         </div>
