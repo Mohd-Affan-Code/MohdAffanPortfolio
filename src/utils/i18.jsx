@@ -8,7 +8,6 @@ i18n
   .use(LanguageDetector) // detects the user's language
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
-    lng: "en", // default language
     fallbackLng: "en", // fallback language if translation is not found
     debug: true, // enables debug mode to see loading details in the console
 

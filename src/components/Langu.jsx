@@ -11,7 +11,9 @@ const Langu = ({ setLangu }) => {
   };
 
   const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
+    i18n.changeLanguage(lang).then(() => {
+      window.location.reload(); // Language change hone ke baad page reload
+    });
   };
   return (
     <div className="h-[70vh] w-[40vw] fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl z-10 flex justify-center items-center flex-col bg-white p-8 shadow-xl max-md:h-screen max-md:w-full">
