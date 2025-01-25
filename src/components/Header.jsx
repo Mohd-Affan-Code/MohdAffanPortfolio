@@ -4,11 +4,12 @@ import ResponsiveN from "./ResponsiveN";
 import { Link } from "react-scroll";
 import Langu from "./Langu";
 import { LanguContext } from "../context/Langtoggle";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
   const { langu, setLangu } = useContext(LanguContext);
   const [toggle, setToggle] = useState(false);
-  // const [langu, setLangu] = useState(false);
 
   const handleToggle = () => {
     setToggle((prev) => !prev);
@@ -52,7 +53,7 @@ const Header = () => {
             duration={500}
             className="relative text-xl  cursor-pointer after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full"
           >
-            Home
+            {t("header.navigation.home")}
           </Link>
 
           <Link
@@ -63,7 +64,7 @@ const Header = () => {
             duration={500}
             className="relative text-xl cursor-pointer after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full"
           >
-            About
+            {t("header.navigation.about")}
           </Link>
           <Link
             to="project"
@@ -73,7 +74,7 @@ const Header = () => {
             duration={500}
             className="relative text-xl cursor-pointer after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full"
           >
-            Project
+            {t("header.navigation.project")}
           </Link>
           <Link
             to="contact"
@@ -83,7 +84,7 @@ const Header = () => {
             duration={500}
             className="relative text-xl cursor-pointer after:content-[''] after:absolute after:-bottom-1 after:left-1/2 after:transform after:-translate-x-1/2 after:w-[6px] after:h-[6px] transition-all hover:after:bg-blue-500 hover:text-blue-500 after:rounded-full"
           >
-            Contact
+            {t("header.navigation.contact")}
           </Link>
         </ul>
 
@@ -92,7 +93,7 @@ const Header = () => {
           onClick={handleLangu}
           className="flex max-md:hidden items-center space-x-2 text-gray-700 text-xl border-2 border-transparent hover:border-blue-500 py-2 px-3 rounded-md cursor-pointer transition-all duration-300 hover:text-blue-500"
         >
-          <h1 className="font-medium ">English</h1>
+          <h1 className="font-medium ">{t("header.languageSelector.label")}</h1>
           <Globe className="w-6 h-6  " />
         </div>
         <div className="md:hidden">

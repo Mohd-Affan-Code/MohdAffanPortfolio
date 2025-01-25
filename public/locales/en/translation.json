@@ -17,7 +17,7 @@
   },
   "home": {
     "title": "Front-End Web Developer",
-    "intro": "Hi, I'm <span className='underline'>Mohd AFFAN</span>. An expert Front-end Developer based in Mumbai, India",
+    "introPara": "Hi, I'm <span>{{name}}</span>. An expert Front-end Developer based <1>in Mumbai, India</1>",
     "skillsHeading": "My Skills",
     "downloadResume": "Download Resume"
   },
