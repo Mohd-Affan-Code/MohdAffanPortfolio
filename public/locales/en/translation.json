@@ -28,6 +28,30 @@
   },
   "footer": {
     "copyRight" : "MohdAFFAN. All Rights Reserved."
+  },
+  "projects": {
+    "ecommerce": {
+      "title": "E-commerce Platform",
+      "description": "This e-commerce website is a modern, user-friendly platform that offers a smooth and interactive shopping experience."
+    },
+    "flags": {
+      "title": "World API Flag",
+      "description": "Country Flags app showcasing every nation's flag fetched dynamically via API for an interactive and educational experience."
+    },
+    "multiForm": {
+      "title": "Multi-Level Form",
+      "description": "Multi-level form app with step-by-step user inputs, ensuring seamless data collection and smooth navigation."
+    },
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Personal portfolio showcasing skills, projects, and achievements with a sleek design and interactive user experience."
+    },
+    "mindGame": {
+      "title": "Mind Game",
+      "description": "Mind game in React where users match pairs of cards, testing memory and concentration skills in an engaging way."
+    }
   }
+  
+  
 
 }
