@@ -1,12 +1,14 @@
 import React from "react";
 import { Linkedin, Github } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-blue-500 text-white">
       <footer className=" py-4 mx-auto max-w-[79rem] mt-24">
         <div className="container mx-auto flex justify-between items-center px-4">
-          <p className="text-sm">© 2025 Your Website. All Rights Reserved.</p>
+          <p className="text-sm">© 2025 {t("footer.copyRight")} </p>
           <div className="flex space-x-4">
             <a
               href="https://www.linkedin.com/in/mohdaffan09/"

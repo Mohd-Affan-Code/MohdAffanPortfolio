@@ -1,11 +1,15 @@
 import React from "react";
 import { Mail, Linkedin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const ContactPage = () => {
+  const { t } = useTranslation();
   return (
     <div id="contact">
       <div className="mx-auto max-w-[79rem] px-4 mt-24 mb-7">
-        <h2 className="text-4xl font-black text-blue-500">Contact</h2>
+        <h2 className="text-4xl font-black text-blue-500">
+          {t("header.navigation.contact")}
+        </h2>
         <div className="mt-16">
           <div className="flex gap-4">
             <span>

@@ -1,13 +1,15 @@
 import React from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { projectData } from "../assets/ProjectData";
+import { useTranslation } from "react-i18next";
 
 const Project = () => {
+  const { t } = useTranslation();
   return (
     <div id="project" className=" py-12">
       <div className="mx-auto max-w-7xl px-6 mt-14">
         <h2 className="text-4xl font-extrabold text-blue-500  mb-12">
-          Projects
+          {t("header.navigation.project")}
         </h2>
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projectData.map((project) => (

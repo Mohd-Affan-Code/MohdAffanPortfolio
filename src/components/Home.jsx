@@ -19,8 +19,9 @@ const Home = () => {
           {t("home.title")}
         </h1>
         <p className="font-medium text-xl text-gray-700 my-4 leading-10">
-          Hi, I'm <span className="underline"> Mohd AFFAN.</span> An expert
-          Front-end Developer based <br /> in Mumbai, India
+          {t("home.introStart")}{" "}
+          <span className="underline"> {t("home.introName")}</span>
+          {t("home.introPara")}
           <span className="inline-block ml-2">
             <img
               className="h-[23px] w-[32] rounded-[5px] mb-[-5px]"
