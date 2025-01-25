@@ -14,7 +14,7 @@ const Project = () => {
         <div className="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projectData.map((project) => (
             <div
-              key={project.title}
+              key={project.key}
               className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform hover:scale-105"
             >
               <div className="h-60 overflow-hidden">
@@ -26,10 +26,10 @@ const Project = () => {
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                  {project.title}
+                  {t(`projects.${project.key}.title`)}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4">
-                  {project.description}
+                  {t(`projects.${project.key}.description`)}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (

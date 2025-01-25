@@ -9,7 +9,7 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     fallbackLng: "en", // fallback language if translation is not found
-    debug: true, // enables debug mode to see loading details in the console
+    // debug: true, // enables debug mode to see loading details in the console
 
     interpolation: {
       escapeValue: false, // React escapes values automatically
