@@ -34,6 +34,10 @@
       "title": "E-commerce Platform",
       "description": "This e-commerce website is a modern, user-friendly platform that offers a smooth and interactive shopping experience."
     },
+    "ReactFilter": {
+      "title": "React-Advanced-Filter",
+      "description": "Advanced Filtering in React | Smart Search, Category & Brand Filters, Price Range Selection. I recently built an Advanced Filtering project in React that enhances user experience with powerful search and filtering options."
+    },
     "flags": {
       "title": "World API Flag",
       "description": "Country Flags app showcasing every nation's flag fetched dynamically via API for an interactive and educational experience."
@@ -46,8 +50,8 @@
       "title": "Portfolio",
       "description": "Personal portfolio showcasing skills, projects, and achievements with a sleek design and interactive user experience."
     },
-    "mindGame": {
-      "title": "Mind Game",
+    "ticTacToe": {
+      "title": "Tic Tac Toe",
       "description": "Mind game in React where users match pairs of cards, testing memory and concentration skills in an engaging way."
     }
   }

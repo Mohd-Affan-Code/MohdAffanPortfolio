@@ -7,6 +7,13 @@ export const projectData = [
     githubLink: "https://github.com/Mohd-Affan-Code/E-com-Morden-web",
   },
   {
+    key: "ReactFilter",
+    image: "/projectPng/reactfilter.png",
+    technologies: ["React", "Tailwind"],
+    liveLink: "https://react-advance-filter.netlify.app/",
+    githubLink: "https://github.com/Mohd-Affan-Code/react-Advance-filter",
+  },
+  {
     key: "flags",
     image: "/projectPng/worldApi.png",
     technologies: ["React", "Tailwind"],
@@ -28,10 +35,10 @@ export const projectData = [
     githubLink: "https://github.com/Mohd-Affan-Code/React-portfolio",
   },
   {
-    key: "mindGame",
-    image: "/projectPng/mindGame.png",
+    key: "ticTacToe",
+    image: "/projectPng/ticTacToe.png",
     technologies: ["React", "Tailwind"],
-    liveLink: "https://react-mind-game.netlify.app/",
-    githubLink: "https://github.com/Mohd-Affan-Code/React-mind-Game",
+    liveLink: "https://react-tic-tac-toe-2323.netlify.app/",
+    githubLink: "https://github.com/Mohd-Affan-Code/react-tic-tac-toe",
   },
 ];
