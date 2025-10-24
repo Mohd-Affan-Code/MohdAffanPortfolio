@@ -1,5 +1,12 @@
 export const projectData = [
   {
+    key: "ExpenseTracker",
+    image: "/projectPng/ExpenseTracker.png",
+    technologies: ["React", "Tailwind"],
+    liveLink: "https://expense-tracker-dashborad.vercel.app/",
+    githubLink: "https://github.com/Mohd-Affan-Code/Expense-Tracker",
+  },
+  {
     key: "ecommerce",
     image: "/projectPng/eCommarce.png",
     technologies: ["React", "Tailwind"],
@@ -28,17 +35,11 @@ export const projectData = [
     githubLink: "https://github.com/Mohd-Affan-Code/Multi-level-Form",
   },
   {
-    key: "portfolio",
-    image: "/projectPng/portfolio.png",
-    technologies: ["React", "Tailwind"],
-    liveLink: "https://react-portfolio-9867.netlify.app/",
-    githubLink: "https://github.com/Mohd-Affan-Code/React-portfolio",
-  },
-  {
-    key: "ticTacToe",
-    image: "/projectPng/ticTacToe.png",
-    technologies: ["React", "Tailwind"],
-    liveLink: "https://react-tic-tac-toe-2323.netlify.app/",
-    githubLink: "https://github.com/Mohd-Affan-Code/react-tic-tac-toe",
+    key: "quizApp",
+    image: "/projectPng/QuizApp.png",
+    technologies: ["HTML", "CSS", "JS"],
+    liveLink: "https://quizz-application001.netlify.app/",
+    githubLink:
+      "https://github.com/Mohd-Affan-Code/JavaScript-Mini-Challenges/tree/main/quizApp",
   },
 ];
