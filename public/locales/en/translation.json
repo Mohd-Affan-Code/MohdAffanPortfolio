@@ -45,9 +45,9 @@
       "title": "World API Flag",
       "description": "Country Flags app showcasing every nation's flag fetched dynamically via API for an interactive and educational experience."
     },
-    "multiForm": {
-      "title": "Multi-Level Form",
-      "description": "Multi-level form app with step-by-step user inputs, ensuring seamless data collection and smooth navigation."
+    "qrcodeGen": {
+      "title": "QR Code Generator",
+      "description": "A beautiful and customizable QR Code Generator built with React, Tailwind CSS, and qrcode.react."
     },
     "quizApp": {
       "title": "Quiz App",

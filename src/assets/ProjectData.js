@@ -2,9 +2,16 @@ export const projectData = [
   {
     key: "ExpenseTracker",
     image: "/projectPng/ExpenseTracker.png",
-    technologies: ["React", "Tailwind"],
+    technologies: ["React", "Tailwind", "Chart.js"],
     liveLink: "https://expense-tracker-dashborad.vercel.app/",
     githubLink: "https://github.com/Mohd-Affan-Code/Expense-Tracker",
+  },
+  {
+    key: "qrcodeGen",
+    image: "/projectPng/qrcodeGen.png",
+    technologies: ["React", "Tailwind", "qrcode.react"],
+    liveLink: "https://qrcode-webapp.netlify.app/",
+    githubLink: "https://github.com/Mohd-Affan-Code/QR-code-generator",
   },
   {
     key: "ecommerce",
@@ -26,13 +33,6 @@ export const projectData = [
     technologies: ["React", "Tailwind"],
     liveLink: "https://world-api.netlify.app/",
     githubLink: "https://github.com/Mohd-Affan-Code/React-flag-API",
-  },
-  {
-    key: "multiForm",
-    image: "/projectPng/multiStepForm.png",
-    technologies: ["React", "Tailwind"],
-    liveLink: "https://multi-lavel-form.netlify.app/",
-    githubLink: "https://github.com/Mohd-Affan-Code/Multi-level-Form",
   },
   {
     key: "quizApp",

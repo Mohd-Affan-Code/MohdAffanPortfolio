@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { LanguContext } from "../context/Langtoggle";
 
 const ResponsiveN = ({ toggle }) => {
-  const { langu, setLangu } = useContext(LanguContext);
+  const { setLangu } = useContext(LanguContext);
   const handleLagutoggle = () => {
     setLangu(true);
   };
