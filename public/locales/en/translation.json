@@ -33,6 +33,10 @@
       "title": "Expense Tracker",
       "description": "A modern and interactive web app to track daily expenses, visualize spending patterns, and manage your budget efficiently."
     },
+    "qrcodeGen": {
+      "title": "QR Code Generator",
+      "description": "A beautiful and customizable QR Code Generator built with React, Tailwind CSS, and qrcode.react."
+    },
     "ecommerce": {
       "title": "E-commerce Platform",
       "description": "This e-commerce website is a modern, user-friendly platform that offers a smooth and interactive shopping experience."
@@ -44,10 +48,6 @@
     "flags": {
       "title": "World API Flag",
       "description": "Country Flags app showcasing every nation's flag fetched dynamically via API for an interactive and educational experience."
-    },
-    "qrcodeGen": {
-      "title": "QR Code Generator",
-      "description": "A beautiful and customizable QR Code Generator built with React, Tailwind CSS, and qrcode.react."
     },
     "quizApp": {
       "title": "Quiz App",
