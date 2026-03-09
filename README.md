@@ -27,24 +27,6 @@ A clean, responsive, and multilingual **React + Tailwind CSS Portfolio Website**
 
 ---
 
-## 🖼️ Screenshots | स्क्रीनशॉट्स
-
-### 🏠 Home Page
-
-![Home Screenshot](./screenshots/home.png)
-
-### 💼 Projects Page
-
-![Projects Screenshot](./screenshots/projects.png)
-
-### 📞 Contact Section
-
-![Contact Screenshot](./screenshots/contact.png)
-
-> 📸 Note: Apne screenshots ko `screenshots/` folder me rakhein (e.g. `src/screenshots/home.png`).
-
----
-
 ## 🛠️ Tech Stack | टेक्नोलॉजी स्टैक
 
 - ⚛️ **React.js** – Frontend Library
