@@ -1,5 +1,12 @@
 export const projectData = [
   {
+    key: "socialContactVault",
+    image: "/projectPng/socailVault.png",
+    technologies: ["React", "Tailwind", "Appwrite"],
+    liveLink: "https://social-contact-vault.vercel.app/",
+    githubLink: "https://github.com/Mohd-Affan-Code/Social_Vault_Profile",
+  },
+  {
     key: "ExpenseTracker",
     image: "/projectPng/ExpenseTracker.png",
     technologies: ["React", "Tailwind", "Chart.js"],
@@ -19,13 +26,6 @@ export const projectData = [
     technologies: ["React", "Tailwind"],
     liveLink: "https://arizona-e-commerce.netlify.app/",
     githubLink: "https://github.com/Mohd-Affan-Code/E-com-Morden-web",
-  },
-  {
-    key: "ReactFilter",
-    image: "/projectPng/reactfilter.png",
-    technologies: ["React", "Tailwind"],
-    liveLink: "https://react-advance-filter.netlify.app/",
-    githubLink: "https://github.com/Mohd-Affan-Code/react-Advance-filter",
   },
   {
     key: "flags",
